@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) 
+
+{  	
+	printf("Girilen sayinin cift ya da tek olarak bulunmasi!\n");
+	printf("******************\n");
+	
+	int x;
+	
+	printf("Bir sayi giriniz:");
+	scanf("%d",&x); 
+	
+	if (x%2==0) 
+	
+	{
+		printf ("sayi cifttir \n",x) ;
+	}
+	else 
+	{ 
+	    printf (" sayi tektir \n",x) ;
+	
+	}
+	
+	return 0;
+}
