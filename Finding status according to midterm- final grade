@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Kullanicidan alinan vize ve final notuna bakilarak kullanicinin durumunu ekrana yazdiran c kodu
+//Finding the student's passing or staying status according to their midterm and final grades
+
+int main()
+{
+    int vize;
+    int fin;
+
+    printf("Vize notunu giriniz:\n");
+    scanf("%d",&vize);
+
+    printf("Final notunu giriniz:\n");
+    scanf("%d",&fin);
+
+    double gnot=vize*0.4+fin*0.6;
+
+    if(gnot<59.45)
+        printf("Gnot: %.2lf - Kaldiniz!",gnot);
+
+    else
+    {
+        printf("Gnot: %.2lf - Gectiniz!",gnot);
+    }
+
+    return 0;
+}
