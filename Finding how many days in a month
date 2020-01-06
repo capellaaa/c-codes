@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Kullanicinin girdigi ayda kac gun oldugunu bulan c kodu
+
+int main()
+{
+    int gun;
+
+    printf("Lutfen 1 ile 7 arasinda bir sayi giriniz:");
+    scanf("%d",&gun);
+
+    switch(gun)
+    {
+    case 1:
+    case 3:
+    case 5:
+
+        printf("31");
+        break;
+
+    case 2:
+
+        printf("28/29");
+        break;
+
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        printf("30");
+        break;
+
+    default:
+    {
+        printf("Yanlis deger girdiniz!");
+    }
+    }
+    return 0;
+}
